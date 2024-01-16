@@ -42,15 +42,23 @@
 
    Sube los cambios a la rama "master" en el repositorio remoto.
 
-# Cambiar a una rama existente
-git switch nombre_de_la_rama
+# Cambiar a la rama "master"
+git checkout master
 
-# Crear una nueva rama y cambiar a ella
-git switch -c nueva_rama
-
-# Guardar temporalmente los cambios en un stash
+# Guardar temporalmente los cambios en un stash si es necesario
 git stash
 
-# Recuperar los cambios del stash
+# Fusionar o reorganizar los cambios de otra rama en "master"
+# Utilizando `git merge`:
+git merge nombre_de_otra_rama
+# Utilizando `git rebase`:
+git rebase nombre_de_otra_rama
+# Asegúrate de entender las implicaciones de reescribir la historia antes de usar `rebase`.
+
+# Aplicar el stash si guardaste cambios temporalmente
 git stash apply
+
+# Realizar el push de los cambios a la rama "master"
+git push origin master
+
 
