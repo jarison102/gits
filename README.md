@@ -42,3 +42,15 @@
 
    Sube los cambios a la rama "master" en el repositorio remoto.
 
+# Cambiar a una rama existente
+git switch nombre_de_la_rama
+
+# Crear una nueva rama y cambiar a ella
+git switch -c nueva_rama
+
+# Guardar temporalmente los cambios en un stash
+git stash
+
+# Recuperar los cambios del stash
+git stash apply
+
