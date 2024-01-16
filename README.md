@@ -1,70 +1,50 @@
+¡Entendido! Aquí está una lista consolidada con todos los comandos y explicaciones:
 
-
-1. **Cambiar a la rama "master":**
+1. **Cambiar de rama:**
    ```bash
-   **git checkout master**
+   git checkout nombre_de_la_rama
    ```
 
-   Cambia al la rama principal "master".
+   Cambia a la rama especificada.
 
-2. **Guardar temporalmente los cambios en un stash si es necesario:**
+2. **Crear y cambiar a una nueva rama:**
    ```bash
-   **git stash**
+   git switch -c nueva_rama
+   ```
+
+   Crea una nueva rama y cambia a ella.
+
+3. **Guardar temporalmente los cambios en un stash:**
+   ```bash
+   git stash
    ```
 
    Guarda temporalmente los cambios locales en un stash para limpiar el directorio de trabajo.
 
-3. **Fusionar o reorganizar los cambios de la otra rama en "master":**
-   - **Utilizando `git merge`:**
-     ```bash
-     **git merge nombre_de_otra_rama**
-     ```
-     Fusiona los cambios de "nombre_de_otra_rama" en la rama actual "master".
-   - **Utilizando `git rebase`:**
-     ```bash
-     **git rebase nombre_de_otra_rama**
-     ```
-     Reorganiza la historia de "master" sobre la base de los cambios en "nombre_de_otra_rama".
-
-     Asegúrate de entender las implicaciones de reescribir la historia antes de usar `rebase`.
-
-4. **Aplicar el stash si guardaste cambios temporalmente:**
+4. **Recuperar los cambios del stash:**
    ```bash
-   **git stash apply**
+   git stash apply
    ```
 
    Aplica los cambios guardados del stash al directorio de trabajo.
 
-5. **Realizar el push de los cambios a la rama "master":**
+5. **Fusionar cambios de otra rama en "master":**
+   - **Utilizando `git merge`:**
+     ```bash
+     git merge nombre_de_otra_rama
+     ```
+     Fusiona los cambios de "nombre_de_otra_rama" en la rama actual "master".
+   - **Utilizando `git rebase`:**
+     ```bash
+     git rebase nombre_de_otra_rama
+     ```
+     Reorganiza la historia de "master" sobre la base de los cambios en "nombre_de_otra_rama". Asegúrate de entender las implicaciones de reescribir la historia antes de usar `rebase`.
+
+6. **Realizar el push de los cambios a la rama "master":**
    ```bash
-   **git push origin master**
+   git push origin master
    ```
 
    Sube los cambios a la rama "master" en el repositorio remoto.
 
-# Cambiar a la rama "master"
-**git checkout master**
-
-# Guardar temporalmente los cambios en un stash si es necesario
-**git stash**
-
-# Fusionar o reorganizar los cambios de otra rama en "master"
-# Utilizando `git merge`:
-**git merge nombre_de_otra_rama**
-# Utilizando `git rebase`:
-**git rebase nombre_de_otra_rama**
-# Asegúrate de entender las implicaciones de reescribir la historia antes de usar `rebase`.
-
-# Aplicar el stash si guardaste cambios temporalmente
-**git stash apply**
-
-# Realizar el push de los cambios a la rama "master"
-**git push origin master**
-
-# Cambiar a una rama existente
-**git switch nombre_de_la_rama**
-
-# Crear una nueva rama y cambiar a ella
-**git switch -c nueva_rama**
-
-
+Estos comandos te permitirán realizar diversas operaciones en Git, como cambiar de rama, guardar y aplicar cambios en un stash, fusionar o reorganizar cambios entre ramas y realizar push de cambios a un repositorio remoto. ¡Espero que esta lista consolidada sea útil! Si tienes más preguntas o necesitas más clarificaciones, no dudes en preguntar.
