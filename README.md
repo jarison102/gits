@@ -1,4 +1,4 @@
-¡Entendido! Aquí está el resumen completo con las explicaciones incluidas en el código:
+
 
 1. **Cambiar a la rama "master":**
    ```bash
